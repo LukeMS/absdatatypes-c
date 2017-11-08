@@ -4,4 +4,7 @@ install:
   - sudo apt-get install valgrind
   - sudo make install --file=linux.makefile
 script:
+  - cd ex_parcels
+  - make valgrind --file=linux.makefile
+  - cd .. 
 after_script:
