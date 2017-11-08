@@ -17,7 +17,7 @@ clean_files := $(strip $(foreach f,$(clean_filenames),$(wildcard $(f))))
 
 _dummy := $(shell mkdir -p "$(BDIR)" "$(ODIR)")
 
-all: $(OBJS) $(LIBS)
+all: $(OBJS)
 	gcc $(OBJS) $(IDIR) $(LDIR) $(LIBS) -o $(BDIR)/$(_TARGET)
 
 run: all
