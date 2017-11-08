@@ -4,7 +4,7 @@ _TARGET := $(basename $(notdir $(realpath $(lastword $(_MAKEFILE_ABS)))))
 BDIR = .
 ODIR = obj
 SDIR = .
-IDIR = -I/usr/include
+IDIR = -I/usr/include/absdt
 LDIR = -L/usr/lib
 LIBS = -labsdatatypes
 CFLAGS = -static -Wall -W -ggdb -std=c99 $(IDIR) $(LIBS)
