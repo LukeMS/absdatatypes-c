@@ -4,6 +4,10 @@ git-commit.bat
 obj
 bin
 lib
+failed_test_bistree
+failed_test_heap_tree_pq
+failed_pqueue_test
+failed_test_sstruct_chtdict
 
 # Prerequisites
 *.d

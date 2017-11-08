@@ -38,7 +38,7 @@ int main(void)
 
     }
 
-    pqueue_destroy(parcels);
+    pqueue_destroy(&parcels);
 
     return 0;
 }
